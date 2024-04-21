@@ -192,10 +192,8 @@ btnFinalizar.addEventListener("submit", (e) =>{
 
         whatsapp(FormMudanca)
         window.location.href = './finalizado.html'
+    }else{
+        alert("Você precisa aceitar os Termos da mudança")
+        return 
     }
-
-    alert("Você precisa aceitar os Termos da mudança")
-    return 
-
-    
 })
