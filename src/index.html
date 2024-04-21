@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/stylePricipal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>NNC Transporte</title>
+</head>
+<body>
+  <header>
+    <img src="../public/imagens/WhatsApp Image 2024-04-20 at 08.40.18.jpeg" alt="Logo da empresa">
+  </header>
+
+  <main>
+    <h1>Formulario da mudança</h1>
+    <img class="img-status" src="../public/imagens/status-2.png" alt="imagem status">
+
+    <section class="container">
+      <form class="formulario" autocomplete="off">
+        
+        <h2>Preencha seus dados</h2>
+        
+        <div class="div-form">
+          <label for="inputNome">Nome</label>
+          <input required type="text" id="inputNome" name="nome" placeholder="Digite seu nome completo..." maxlength="30">
+        </div>
+
+        <h2>Endereço de origem</h2>
+        
+        <div class="div-form">
+          <label for="inputEndereco">Endereço</label>
+          <input required type="text" id="inputEndereco" placeholder="Digite endereço de origem..." maxlength="30">
+        </div>
+
+        <div class="div-form">
+          <label for="inputBairro">Bairro</label>
+          <input required type="text" id="inputBairro" placeholder="Digite o bairro..." maxlength="30">
+        </div>
+
+        <div class="div-forms">
+          <div class="div-form-1 div-form">
+            <label for="inputState" >Complemento</label>
+            <select id="inputState" required>
+              <option selected>casa</option>
+              <option>apartamento</option>
+            </select>
+          </div>
+
+          <div class="div-form-2 div-form">
+            <label for="inputNumero">numero</label>
+            <input required type="number" id="inputNumero" placeholder="Digite numero" maxlength="9">
+          </div>
+          <div class="div-form-3 div-form">
+            <label for="inputCep">Cep</label>
+            <input required type="text" id="inputCep" placeholder="Digite o cep" maxlength="30">
+          </div>
+        </div>
+
+        <h2>Endereço de Destino</h2>
+        
+        <div class="div-form">
+          <label for="inputEndereco2">Endereço de Destino</label>
+          <input required type="text" id="inputEndereco2" placeholder="Digite endereço de destino..." maxlength="30">
+        </div>
+
+        <div class="div-form">
+          <label for="inputBairro2">Bairro</label>
+          <input required type="text" id="inputBairro2" placeholder="Digite o bairro..." maxlength="30">
+        </div>
+
+        <div class="div-forms">
+          <div class="div-form-1 div-form">
+            <label for="inputState2" >Complemento</label>
+            <select id="inputState2" required>
+              <option selected>casa</option>
+              <option>apartamento</option>
+            </select>
+          </div>
+
+          <div class="div-form-2 div-form">
+            <label for="inputNumero2">numero</label>
+            <input required type="number" id="inputNumero2" placeholder="Digite numero" maxlength="10">
+          </div>
+          <div class="div-form-3 div-form">
+            <label for="inputCep2">Cep</label>
+            <input required type="text" id="inputCep2" placeholder="Digite o cep" maxlength="10">
+          </div>
+        </div>
+
+        <h2>Lista de moveis: <span class="span-h2">(não carregamos nada que não estiver na lista)</span></h2>
+
+        <ul class="ulLista">
+        </ul>
+
+        <div class="form-add hidden">
+          <h2>Adicionado moveis</h2>
+          <input type="text" name="moveis" id="inputMoveis" class="inputMovel" placeholder="Digite o Item...">
+          <div>
+            <button class="removeItem"><i class="bi bi-trash3-fill"></i> limpar</button>
+            <button class="addItem"><i class="bi bi-plus-circle"></i> adicionar</button>
+          </div>
+        </div>
+
+        <button class="btn btnAdicionar"><i class="bi bi-plus-circle"></i>    adicionar na lista</button>
+
+
+        <div class="div-check">
+          <input type="checkbox" id="inputCheck">
+          <label for="inputCheck">Montagem e desmontagem (isso pode mudar valor do orçamento)</label>
+        </div>
+
+        <div class="div-check">
+          <input type="checkbox" id="inputCheckEmbalagem">
+          <label for="inputCheckEmbalagem">Embalagem (isso pode mudar valor do orçamento)</label>
+        </div>
+
+        <div class="div-check">
+          <input type="checkbox" id="inputCheckTermo" required>
+          <label for="inputCheckTermo"><a href="termos.html" target="_blank">aceita temos e condiçoes</a></label>
+        </div>
+
+        <div class="btn-enviar">
+          <button type="submit" class="btn-submit">
+            <i class="bi bi-whatsapp"></i> Finalizar
+          </button>
+        </div>
+
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <a href="https://instagram.com/euedupontes_"><i class="bi bi-instagram"></i></a>
+
+    <a href="https://github.com/pontesedu.io">site criado pelo:  <i class="bi bi-github"></i> Eduardo Pontes</a>
+  </footer>
+
+
+  <script src="./js/main.js"></script>
+</body>
+</html>

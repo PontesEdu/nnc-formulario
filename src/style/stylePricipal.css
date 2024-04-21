@@ -1,0 +1,273 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+:root{
+    --btn-cor: rgba(0, 0, 0, 0.863);
+    --cor-input: #9ED2BE;
+    --cor-li: #FBFADA;
+    --cor-form: #ADBC9F;
+    --cor-button: rgba(0, 0, 0, 0.781);
+    --cor-hover-button: rgba(0, 0, 0, 0.644);
+    --cor-conatiner: linear-gradient(to bottom, #186F65, #186F65, #12372A );
+    --cor-body: #9ed2bed0;
+}
+
+
+body{
+    max-width: 100vw;
+    background-color: var(--cor-body);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.89);
+}
+
+
+header{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+}
+
+header img{
+    width: 200px;
+    height: 200px;
+}
+
+main h1{
+    text-align: center;
+    margin: 50px 0px;
+    font-size: 2.7em;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.img-status{
+    display: flex;
+    margin: 50px auto;
+}
+
+.container{
+    display: flex;
+    width: 85vw;
+    padding: 15px;
+    margin: auto;
+    background: var(--cor-conatiner);
+    border-radius: 15px;
+}
+
+/* formulario */
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.formulario h2{
+    font-weight: bold;
+    font-size: 1.8em;
+    margin-top: 15px;
+}
+
+.div-forms{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.div-form-1{
+    display: flex;
+    flex: 1;
+}
+.div-form-3{
+    display: flex;
+    flex: 1;
+}
+
+.div-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.2em;
+}
+
+input, select{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.div-form input, .form-add input, select{
+    padding: 12px;
+    border: 0px;
+    border-radius: 8px;
+    background-color: var(--cor-input);
+    box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 0.356);
+    color: white;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.div-form input:focus, .form-add input:focus, select:focus{
+    outline: none;
+    border: 1px solid white;
+    transition: 0.3ms ease;
+}
+
+.div-form input::placeholder, .form-add input::placeholder{
+    color: white;
+}
+
+/* Lista */
+
+ul, li{
+    margin: 0;
+    padding: 0;
+}
+
+.ulLista{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ulLista li{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    flex: 1;
+    background-color: var(--cor-li);
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+.ulLista li h3{
+    font-weight: bold;
+}
+
+
+/* formulario add lista */
+
+.span-h2{
+    font-size: 0.7em;
+}
+
+.form-add{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    background-color: var(--cor-form);
+    border-radius: 15px;
+}
+
+.form-add input{
+    padding: 15px;
+    font-size: 1.1em;
+}
+
+.form-add div{
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+
+.form-add div button, .btn{
+    padding: 10px;
+    background-color: var(--cor-button);
+    border: 0;
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 0.877);
+}
+
+.form-add div button:hover, .btn:hover{
+    background-color: var(--cor-hover-button);
+}
+
+
+.btnAdicionar{
+    width: 70%;
+    margin: 10px auto;
+    font-size: 1.2em;
+    border-radius: 20px;
+}
+
+.hidden{
+    display: none;
+}
+
+/* check */
+
+.div-check{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.div-check input{
+    height: 15px;
+    width: 15px;
+}
+
+.btn-enviar{
+    display: flex;
+    justify-content: end;
+}
+
+.btn-enviar button{
+    font-size: 1.2em;
+    background-color: #24D365;
+    border: 0px;
+    color: white;
+    border-radius: 25px;
+    padding: 15px 30px;
+}
+
+footer{
+    background-color: #12372A;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 15px 0;
+    bottom: 0;
+    margin-top: 50px;
+    
+}
+
+
+footer a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.87);
+    font-size: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
