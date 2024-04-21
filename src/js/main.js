@@ -27,33 +27,7 @@ const FormMudanca = {}
 
 
 
-inputCheckMontagem.addEventListener("change", function(){
-    if(this.checked){
-       FormMudanca.montagem = "Com montagem e desmontagem"  
-    } else{
-        FormMudanca.montagem = "sem montagem e desmontagem"
-    }
 
-    // console.log(FormMudanca.montagem)
-})
-
-inputCheckEmbalagem.addEventListener("change", function(){
-    if(this.checked){
-       FormMudanca.embalagem = "Com embalagem"  
-    } else{
-        FormMudanca.embalagem = "sem Embalagem"
-    }
-})
-
-inputCheckTermo.addEventListener("change", function(){
-    if(this.checked){
-       FormMudanca.termo = "concordou com os termos da mudança"
-       return true  
-    } else{
-        FormMudanca.termo = "NÃO concordou com os termos da mudança"
-        return false
-    }
-})
 
 
 
@@ -171,30 +145,53 @@ function whatsapp(form){
 btnFinalizar.addEventListener("submit", (e) =>{
     e.preventDefault()
 
-    debugger
 
-    if(FormMudanca.termo){
-        FormMudanca.nome = nome.value
-        FormMudanca.enderecoOrigem = {
-            endereco: endereco.value,
-            bairro: bairro.value,
-            complemento: complemento.value,
-            numero: numero.value,
-            cep: cep.value
+    inputCheckMontagem.addEventListener("change", function(){
+        if(this.checked){
+           FormMudanca.montagem = "Com montagem e desmontagem"  
+        } else{
+            FormMudanca.montagem = "sem montagem e desmontagem"
         }
-        FormMudanca.enderecoDestino = {
-            endereco: endereco2.value,
-            bairro: bairro2.value,
-            complemento: complemento2.value,
-            numero: numero2.value,
-            cep: cep2.value
+    
+        
+    })
+    
+    inputCheckEmbalagem.addEventListener("change", function(){
+        if(this.checked){
+           FormMudanca.embalagem = "Com embalagem"  
+        } else{
+            FormMudanca.embalagem = "sem Embalagem"
         }
-        FormMudanca.lista = lista
+    })
+    
+    inputCheckTermo.addEventListener("change", function(){
+        if(this.checked){
+           FormMudanca.termo = "concordou com os termos da mudança"
+        } else{
+            FormMudanca.termo = "NÃO concordou com os termos da mudança"
+        }
+    })
 
-        whatsapp(FormMudanca)
-        window.location.href = './finalizado.html'
-    }else{
-        alert("Você precisa aceitar os Termos da mudança")
-        return 
+    FormMudanca.nome = nome.value
+    FormMudanca.enderecoOrigem = {
+        endereco: endereco.value,
+        bairro: bairro.value,
+        complemento: complemento.value,
+        numero: numero.value,
+        cep: cep.value
     }
+    FormMudanca.enderecoDestino = {
+        endereco: endereco2.value,
+        bairro: bairro2.value,
+        complemento: complemento2.value,
+        numero: numero2.value,
+        cep: cep2.value
+    }
+    FormMudanca.lista = lista
+
+    console.log(FormMudanca)
+
+    // whatsapp(FormMudanca)
+    // window.location.href = './finalizado.html'
+    
 })
