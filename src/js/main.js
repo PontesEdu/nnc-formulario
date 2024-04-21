@@ -162,7 +162,7 @@ function whatsapp(form){
     + " " + "%0a"
     + "TERMOS DA MUDANÇA: " +form.termo+ "%0a"
 
-    window.open(url, "_black").focus()
+    window.open(url, "_black")
 
 
 }
@@ -171,6 +171,7 @@ function whatsapp(form){
 btnFinalizar.addEventListener("submit", (e) =>{
     e.preventDefault()
 
+    debugger
 
     if(FormMudanca.termo){
         FormMudanca.nome = nome.value
