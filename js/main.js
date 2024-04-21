@@ -133,6 +133,10 @@ function whatsapp(form){
 btnFinalizar.addEventListener("submit", (e) =>{
     e.preventDefault()
 
+    const FormMudanca = {
+        nome: nome.value
+    }
+
 
     inputCheckMontagem.addEventListener("change", function(){
         if(this.checked){
@@ -160,10 +164,7 @@ btnFinalizar.addEventListener("submit", (e) =>{
         }
     })
 
-    const FormMudanca = {
-        nome: nome.value
-    }
-
+    
     FormMudanca.enderecoOrigem = {
         endereco: endereco.value,
         bairro: bairro.value,
@@ -180,9 +181,7 @@ btnFinalizar.addEventListener("submit", (e) =>{
     }
     FormMudanca.lista = lista
 
-    console.log(FormMudanca)
-
     whatsapp(FormMudanca)
-    window.location.href = './finalizado.html'
+    window.location.href = '../pages/finalizado.html'
     
 })
