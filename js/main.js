@@ -130,40 +130,37 @@ function whatsapp(form){
 }
 
 
+const FormMudanca = {
+    nome: nome.value
+}
+
+inputCheckMontagem.addEventListener("change", function(){
+    if(this.checked){
+       FormMudanca.montagem = "Com montagem e desmontagem"  
+    } else{
+        FormMudanca.montagem = "sem montagem e desmontagem"
+    }
+})
+
+inputCheckEmbalagem.addEventListener("change", function(){
+    if(this.checked){
+       FormMudanca.embalagem = "Com embalagem"  
+    } else{
+        FormMudanca.embalagem = "sem Embalagem"
+    }
+})
+
+inputCheckTermo.addEventListener("change", function(){
+    if(this.checked){
+       FormMudanca.termo = "concordou com os termos da mudança"
+    } else{
+        FormMudanca.termo = "NÃO concordou com os termos da mudança"
+    }
+})
+
+
 btnFinalizar.addEventListener("submit", (e) =>{
     e.preventDefault()
-
-    const FormMudanca = {
-        nome: nome.value
-    }
-
-
-    inputCheckMontagem.addEventListener("change", function(){
-        if(this.checked){
-           FormMudanca.montagem = "Com montagem e desmontagem"  
-        } else{
-            FormMudanca.montagem = "sem montagem e desmontagem"
-        }
-    
-        
-    })
-    
-    inputCheckEmbalagem.addEventListener("change", function(){
-        if(this.checked){
-           FormMudanca.embalagem = "Com embalagem"  
-        } else{
-            FormMudanca.embalagem = "sem Embalagem"
-        }
-    })
-    
-    inputCheckTermo.addEventListener("change", function(){
-        if(this.checked){
-           FormMudanca.termo = "concordou com os termos da mudança"
-        } else{
-            FormMudanca.termo = "NÃO concordou com os termos da mudança"
-        }
-    })
-
     
     FormMudanca.enderecoOrigem = {
         endereco: endereco.value,
