@@ -105,41 +105,36 @@ lista.forEach(lista =>{
 
 
 
-function whatsapp(form){
-    const tel = "+5511977844812"
+// function whatsapp(form){
+//     const tel = "+5511977844812"
 
-    const url = "https://wa.me/" + tel + "?text="
-    + "Nome: " +form.nome+ "%0a"
-    + " " + "%0a"
-    + "ENDEREÇO DE ORIGEM" +"%0a"
-    + "Endereço: " +form.enderecoOrigem.endereco+ "%0a"
-    + "Numero: " +form.enderecoOrigem.numero+ "%0a"
-    + "Bairro: " +form.enderecoOrigem.bairro+ "%0a"
-    + "Cep: " +form.enderecoOrigem.cep+ "%0a"
+//     const url = "https://wa.me/" + tel + "?text="
+//     + "Nome: " +form.nome+ "%0a"
+//     + " " + "%0a"
+//     + "ENDEREÇO DE ORIGEM" +"%0a"
+//     + "Endereço: " +form.enderecoOrigem.endereco+ "%0a"
+//     + "Numero: " +form.enderecoOrigem.numero+ "%0a"
+//     + "Bairro: " +form.enderecoOrigem.bairro+ "%0a"
+//     + "Cep: " +form.enderecoOrigem.cep+ "%0a"
+//     + " " + "%0a"
+//     + "ENDEREÇO DE DESTINO" +"%0a"
+//     + "Endereço: " +form.enderecoDestino.endereco+ "%0a"
+//     + "Numero: " +form.enderecoDestino.numero+ "%0a"
+//     + "Bairro: " +form.enderecoDestino.bairro+ "%0a"
+//     + "Cep: " +form.enderecoDestino.cep+ "%0a"
+//     + " " + "%0a"
+//     + "LISTA: " +form.lista+ "%0a"
+//     + " " + "%0a"
+//     + "EMBALAGEM: " +form.embalagem+ "%0a"
+//     + " " + "%0a"
+//     + "MONTAGEM: " +form.montagem+ "%0a"
+//     + " " + "%0a"
+//     + "TERMOS DA MUDANÇA: " +form.termo+ "%0a"
 
-    + " " + "%0a"
-    + "ENDEREÇO DE DESTINO" +"%0a"
-    + "Endereço: " +form.enderecoDestino.endereco+ "%0a"
-    + "Numero: " +form.enderecoDestino.numero+ "%0a"
-    + "Bairro: " +form.enderecoDestino.bairro+ "%0a"
-    + "Cep: " +form.enderecoDestino.cep+ "%0a"
-
-    + " " + "%0a"
-    + "LISTA: " +form.lista+ "%0a"
-
-    + " " + "%0a"
-    + "EMBALAGEM: " +form.embalagem+ "%0a"
-
-    + " " + "%0a"
-    + "MONTAGEM: " +form.montagem+ "%0a"
-
-    + " " + "%0a"
-    + "TERMOS DA MUDANÇA: " +form.termo+ "%0a"
-
-    window.open(url, "_black")
+//     window.open(url, "_black")
 
 
-}
+// }
 
 
 btnFinalizar.addEventListener("submit", (e) =>{
