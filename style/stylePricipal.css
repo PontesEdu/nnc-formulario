@@ -56,7 +56,6 @@ main h1{
 
 .container{
     display: flex;
-    width: 95vw;
     padding: 15px;
     margin: auto;
     background: var(--cor-conatiner);
