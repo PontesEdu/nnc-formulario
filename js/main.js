@@ -99,7 +99,7 @@ lista.forEach(lista =>{
 
 
 function whatsapp(form){
-    const tel = "+5511977844812"
+    const tel = "+5511953661476"
 
     const url = "https://wa.me/" + tel + "?text="
     + "Nome: " +form.nome+ "%0a"
@@ -130,9 +130,7 @@ function whatsapp(form){
 }
 
 
-const FormMudanca = {
-    nome: nome.value
-}
+const FormMudanca = {}
 
 inputCheckMontagem.addEventListener("change", function(){
     if(this.checked){
@@ -161,6 +159,8 @@ inputCheckTermo.addEventListener("change", function(){
 
 btnFinalizar.addEventListener("submit", (e) =>{
     e.preventDefault()
+
+    FormMudanca.nome = nome.value
     
     FormMudanca.enderecoOrigem = {
         endereco: endereco.value,
