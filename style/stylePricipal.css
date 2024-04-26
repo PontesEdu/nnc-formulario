@@ -9,12 +9,15 @@
 :root{
     --btn-cor: rgba(0, 0, 0, 0.863);
     --cor-input: #9ED2BE;
-    --cor-li: #FBFADA;
+    /* --cor-li: #FBFADA; */
+    --cor-li: #a3bd8ba6;
     --cor-form: #ADBC9F;
     --cor-button: rgba(0, 0, 0, 0.781);
     --cor-hover-button: rgba(0, 0, 0, 0.644);
-    --cor-conatiner: linear-gradient(to bottom, #186F65, #186F65, #12372A );
-    --cor-body: #9ed2bed0;
+    --cor-conatiner: linear-gradient(to bottom, #186F65, #1a81779f);
+    /* --cor-body: #9ed2bed0; */
+    --cor-body: rgba(169, 169, 169, 0.527);
+    --cor-font: #DB9E12;
 }
 
 
@@ -24,7 +27,7 @@ body{
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: rgba(0, 0, 0, 0.89);
+    color: var(--cor-font);
 }
 
 
@@ -148,14 +151,16 @@ ul, li{
     margin: 0 auto;
     flex: 1;
     background-color: var(--cor-li);
-    border-radius: 10px;
+    border-radius: 15px;
     border: 1px solid black;
     padding: 20px;
     font-size: 1.5em;
+    color: black;
 }
 
 .ulLista li h3{
-    font-weight: bold;
+    font-weight: bold;  
+    color: black;
 }
 
 
@@ -174,6 +179,7 @@ ul, li{
     padding: 10px;
     background-color: var(--cor-form);
     border-radius: 15px;
+    color: black;
 }
 
 .form-add input{
