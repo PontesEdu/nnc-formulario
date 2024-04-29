@@ -15,8 +15,7 @@
     --cor-button: rgba(0, 0, 0, 0.781);
     --cor-hover-button: rgba(0, 0, 0, 0.644);
     --cor-conatiner: linear-gradient(to bottom, #186F65, #1a81779f);
-    /* --cor-body: #9ed2bed0; */
-    --cor-body: rgba(169, 169, 169, 0.527);
+    --cor-body: #9ed2bed0;
     --cor-font: #DB9E12;
 }
 
@@ -45,10 +44,10 @@ header img{
 main h1{
     text-align: center;
     margin: 50px 0px;
-    font-size: 2.7em;
+    font-size: 3em;
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500;
+    font-weight: 700;
     font-style: normal;
 }
 
@@ -219,16 +218,9 @@ ul, li{
 
 /* check */
 
-.div-check{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-top: 10px;
-}
-
 .div-check input{
-    height: 15px;
-    width: 15px;
+    height: 20px;
+    width: 20px;
 }
 
 .btn-enviar{
