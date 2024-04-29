@@ -133,24 +133,28 @@ function whatsapp(form){
 const FormMudanca = {}
 
 inputCheckMontagem.addEventListener("change", function(){
+
     if(this.checked){
-       FormMudanca.montagem = "Com montagem e desmontagem"  
+        FormMudanca.montagem = "Com montagem e desmontagem"  
     } else{
         FormMudanca.montagem = "sem montagem e desmontagem"
-    }
+    } 
 })
 
 inputCheckEmbalagem.addEventListener("change", function(){
+
+
     if(this.checked){
-       FormMudanca.embalagem = "Com embalagem"  
+        FormMudanca.embalagem = "Com embalagem"  
     } else{
         FormMudanca.embalagem = "sem Embalagem"
     }
+
 })
 
 inputCheckTermo.addEventListener("change", function(){
     if(this.checked){
-       FormMudanca.termo = "concordou com os termos da mudança"
+        FormMudanca.termo = "concordou com os termos da mudança"
     } else{
         FormMudanca.termo = "NÃO concordou com os termos da mudança"
     }
