@@ -59,11 +59,10 @@ main{
 
 .banner{
     background-image: url("../imagens/imagem-banner-nnc.jpg");
-    background-size: cover;
+    background-size:contain;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    /* height: 400px; */
     height: 60vh;
     color: white;
     text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.685);
