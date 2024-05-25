@@ -62,7 +62,6 @@ main{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    background-attachment: fixed;
     height: 70vh;
     color: white;
     text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.685);
