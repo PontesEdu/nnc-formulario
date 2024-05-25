@@ -20,6 +20,10 @@ const inputCheckMontagem = document.querySelector("#inputCheck")
 const inputCheckEmbalagem = document.querySelector("#inputCheckEmbalagem")
 const inputCheckTermo = document.querySelector("#inputCheckTermo")
 const btnFinalizar = document.querySelector(".formulario")
+const btnWhats = document.querySelector(".btn-whats")
+
+
+
 
 
 const lista = []
@@ -98,7 +102,7 @@ lista.forEach(lista =>{
 
 
 
-function whatsapp(form){
+function whatsappForm(form){
     const tel = "+5511953661476"
 
     const url = "https://wa.me/" + tel + "?text="
@@ -182,7 +186,19 @@ btnFinalizar.addEventListener("submit", (e) =>{
     }
     FormMudanca.lista = lista
 
-    whatsapp(FormMudanca)
+    whatsappForm(FormMudanca)
     window.location.href = '../pages/finalizado.html'
     
+})
+
+
+btnWhats.addEventListener("click", (e) =>{
+
+    e.preventDefault()
+
+    const tel = "+5511953661476"
+
+    const url = "https://wa.me/" + tel 
+
+    window.open(url, "_blank").focus()
 })
